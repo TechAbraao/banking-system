@@ -4,6 +4,7 @@ import javax.swing.*;
 
 public class MenuOpcoesView {
     public static int menuOpcoes() {
+
         String mensagem = """
                 \n
                 [0] Fechar sistema bancário
@@ -12,7 +13,9 @@ public class MenuOpcoesView {
                 [...] Em construção
                 \n
                 """;
+
         int alternativa = Integer.parseInt(JOptionPane.showInputDialog(null, mensagem, "Menu de Opções - Nexus Bank", JOptionPane.INFORMATION_MESSAGE));
+
         return alternativa;
     }
     public static void programaEncerrado() {

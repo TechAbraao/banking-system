@@ -11,7 +11,7 @@ public class CriarContaView {
         Map<String, Object> conta = new HashMap<>();
         conta.put("titular", titular);
         conta.put("numero", numero);
-        JOptionPane.showMessageDialog(null, "Nome do titular: " + conta.get("titular") + "\nNúmero da conta bancária: " + conta.get("numero"), "Conta criada com sucesso", JOptionPane.INFORMATION_MESSAGE);
+        // JOptionPane.showMessageDialog(null, "Nome do titular: " + conta.get("titular") + "\nNúmero da conta bancária: " + conta.get("numero"), "Conta criada com sucesso", JOptionPane.INFORMATION_MESSAGE);
 
         return conta;
     }

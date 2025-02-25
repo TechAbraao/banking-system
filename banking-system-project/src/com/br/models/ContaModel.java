@@ -11,6 +11,16 @@ public class ContaModel {
         this.titular = titular;
         this.numero = numero;
     }
+
+    @Override
+    public String toString() {
+        return "ContaModel{" +
+                "titular='" + titular + '\'' +
+                ", saldo=" + saldo +
+                ", numero=" + numero +
+                '}';
+    }
+
     public int getNumero() {
         return this.numero;
     }
@@ -41,9 +51,10 @@ public class ContaModel {
             System.out.printf("-> Impossível realizar o saque desse respectivo valor.%n");
         }
     }
-    public void dadosBancarios() {
+    public boolean dadosBancarios() {
         String dados = String.format("Nome do Titular: %s\nSaldo: %s\nNúmero: %s", getTitular(), getSaldo(), getNumero());
         JOptionPane.showMessageDialog(null, dados, "Dados Bancários", JOptionPane.INFORMATION_MESSAGE);
+        return false;
     }
 
 }
