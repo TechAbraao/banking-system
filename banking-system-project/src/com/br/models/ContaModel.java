@@ -2,12 +2,12 @@ package com.br.models;
 
 import javax.swing.*;
 
-public class Conta {
+public class ContaModel {
     private String titular;
     private double saldo = 0.0;
     private int numero;
 
-    public Conta(String titular, int numero) {
+    public ContaModel(String titular, int numero) {
         this.titular = titular;
         this.numero = numero;
     }
@@ -27,9 +27,7 @@ public class Conta {
         String valor = JOptionPane.showInputDialog(null, "Digite");
         double valor_convertido = Double.parseDouble(valor);
         if (valor_convertido > 0.0) {
-            // String dados = Strin
             JOptionPane.showMessageDialog(null,"Teste", "Depósito Bancário", JOptionPane.INFORMATION_MESSAGE);
-            // System.out.printf("-> Adicionado com sucesso - (R$ %.2f)%n", valor_convertido);
             setSaldo(valor_convertido);
         } else {
             System.out.printf("-> Impossível adicionar - (R$ %.2f)%n", valor_convertido);
